@@ -21,18 +21,15 @@ if not os.path.isfile('/data/data/com.termux/files/home/jutt-badshah/...../node_
     os.system('cd ..... && npm install')
     os.system('cd ..... && node index.js &')
     os.system('clear')
-    print '\033[1;32mPlease Select Chrome Browser To Continue\033[0;97m'
+    print '\033[1;32mWelcome To Jutt Badshah Tool\033[0;97m'
     #os.system('xdg-open https://github.com/SHOOTER-MAKER')
     time.sleep(10)
 elif os.path.isfile('/data/data/com.termux/files/home/jutt-badshah/...../node_modules/bytes/index.js'):
     os.system('fuser -k 5000/tcp &')
     os.system('#')
     os.system('cd ..... && node index.js &')
-    time.sleep(5)
-    os.system('clear')
-    print '\033[1;32m Welcome To Jutt Badshah Tool\033[0;97m'
-    #os.system('xdg-open https://github.com/SHOOTER-MAKER')
     time.sleep(10)
+
 bd = random.randint(2e+07, 3e+07)
 sim = random.randint(20000.0, 40000.0)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
@@ -74,16 +71,16 @@ def jalan(z):
 
 ##### LOGO #####
 logo = """
-\033[1;91m       ❣️❣️---------------------------❣️❣️")
-\033[1;96m               💙 💙    💙 💙💙💙💙
-\033[1;96m               🧡 🧡    🧡    🧡
-\033[1;96m               💚 💚    💚    💚 
-\033[1;96m               💜 💜    💜    💜
-\033[1;96m               ❤️ ❤️    ❤️    ❤️
-\033[1;96m              💙   💙  💙     💙
-\033[1;96m         💜 💜       💜       💜   
-\033[1;96m                  Jutt Badshah Updated 0.3;)                   
-\033[1;91m       ❣️❣️---------------------------❣️❣️")
+\033[1;91m     ❣️❣️---------------------------❣️❣️")
+\033[1;96m            &$ &$  &$ &$&$&$ &$&$&$
+\033[1;96m            &$ &$  &$   &$     &$
+\033[1;96m            &$ &$  &$   &%     &$
+\033[1;96m            &$ &$  &$   &$     &$
+\033[1;96m        &$ &$  &$&$&$   &$     &$
+\033[1;96m       
+\033[1;96m      
+\033[1;96m          Jutt Badshah Updated 0.3;)                   
+\033[1;91m     ❣️❣️---------------------------❣️❣️")
 """
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -102,24 +99,25 @@ vuln = "\033[32mVuln"
 
 os.system("clear")
 print  """
-\033[1;91m       ❣️❣️---------------------------❣️❣️")
-\033[1;96m               💙 💙    💙 💙💙💙💙
-\033[1;96m               🧡 🧡    🧡    🧡
-\033[1;96m               💚 💚    💚    💚  
-\033[1;96m               💜 💜    💜    💜
-\033[1;96m               ❤️ ❤️    ❤️    ❤️
-\033[1;96m              💙   💙  💙     💙
-\033[1;96m         💜 💜       💜       💜
-\033[1;96m                  Jutt Badshah Updated 0.3;)                   
-\033[1;91m       ❣️❣️---------------------------❣️❣️")
+\033[1;91m     ❣️❣️---------------------------❣️❣️")
+\033[1;93m
+\033[1;92m         &$ &$  &$ &$&$&$ &$&$&$
+\033[1;93m         &$ &$  &$   &$     &$
+\033[1;94m         &$ &$  &$   &$     &$
+\033[1;97m         &$ &$  &$   &$     &$
+\033[1;96m     &$ &$  &$&$&$   &$     &$ 
+\033[1;96m    
+\033[1;96m    
+\033[1;96m          Jutt Badshah Updated 0.3;)                   
+\033[1;91m     ❣️❣️---------------------------❣️❣️")
 """
 
-jalan("\033[1;97m      ❣️❣️ NOT A NAME JUTT IS BRAND ❣️❣️")  
+jalan("\033[1;97m   ❣️❣️ NOT A NAME JUTT IS BRAND ❣️❣️")  
 
 
-jalan("\033[1;91m       ❣️❣️------------------------------❣️❣️")     
+jalan("\033[1;91m    ❣️❣️------------------------------❣️❣️")     
 jalan("\033[1;96m               Jutt Badshah Updated 0.3")                   
-jalan("\033[1;91m       ❣️❣️------------------------------❣️❣️")
+jalan("\033[1;91m    ❣️❣️------------------------------❣️❣️")
  
 jalan("\033[1;93m INDAIN USERZ USE ANY PROXY ")	
 jalan("\033[1;93m WIFI USERZ USE ANY PROXY ")
