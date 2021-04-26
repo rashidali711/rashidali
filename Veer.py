@@ -73,16 +73,16 @@ def jalan(z):
 
 ##### LOGO #####
 logo = """
-\033[1;91m       ------------------------------------------")
-\033[1;96m                     
-\033[1;96m                        
-\033[1;96m                         
-\033[1;96m                        
-\033[1;96m                        
-\033[1;96m                        
-\033[1;96m                           
+\033[1;91m       ❣️❣️---------------------------❣️❣️")
+\033[1;96m               💙 💙    💙 💙💙💙💙
+\033[1;96m               🧡 🧡    🧡    🧡
+\033[1;96m               💚 💚    💚    💚 
+\033[1;96m               💜 💜    💜    💜
+\033[1;96m               ❤️ ❤️    ❤️    ❤️
+\033[1;96m              💙   💙  💙     💙
+\033[1;96m         ❣️ ❣️       ❣️       ❣️   
 \033[1;96m                  Jutt Badshah Updated 0.3;)                   
-\033[1;91m       ------------------------------------------")
+\033[1;91m       ❣️❣️---------------------------❣️❣️")
 """
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -101,29 +101,29 @@ vuln = "\033[32mVuln"
 
 os.system("clear")
 print  """
-\033[1;91m       ------------------------------------------")
-\033[1;96m                     
-\033[1;96m                        
-\033[1;96m                          
-\033[1;96m                        
-\033[1;96m                        
-\033[1;96m                        
-\033[1;96m                        
+\033[1;91m       ❣️❣️---------------------------❣️❣️")
+\033[1;96m               💙 💙    💙 💙💙💙💙
+\033[1;96m               🧡 🧡    🧡    🧡
+\033[1;96m               💚 💚    💚    💚  
+\033[1;96m               💜 💜    💜    💜
+\033[1;96m               ❤️ ❤️    ❤️    ❤️
+\033[1;96m              💙   💙  💙     💙
+\033[1;96m         ❣️ ❣️       ❣️       ❣️
 \033[1;96m                  Jutt Badshah Updated 0.3;)                   
-\033[1;91m       ------------------------------------------")
+\033[1;91m       ❣️❣️---------------------------❣️❣️")
 """
 
-jalan("\033[1;97m��-----� NOT A NAME JUTT IS BRAND ��-----�")  
+jalan("\033[1;97m      ❣️❣️ NOT A NAME JUTT IS BRAND ❣️❣️")  
 
 
-jalan("\033[1;91m       -----------------------------------------------")     
-jalan("\033[1;96m                  Jutt Badshah Updated 0.3")                   
-jalan("\033[1;91m       -----------------------------------------------")
+jalan("\033[1;91m       ❣️❣️------------------------------❣️❣️")     
+jalan("\033[1;96m               Jutt Badshah Updated 0.3")                   
+jalan("\033[1;91m       ❣️❣️------------------------------❣️❣️")
  
-jalan("\033[1;91m INDAIN USERZ USE ANY PROXY ")	
-jalan("\033[1;91m WIFI USERZ USE ANY PROXY ")
+jalan("\033[1;93m INDAIN USERZ USE ANY PROXY ")	
+jalan("\033[1;93m WIFI USERZ USE ANY PROXY ")
 	
-jalan("\033[1;93m Welcome to Jutt Creations ")
+jalan("\033[1;96m Welcome to Jutt Creations ")
 
 def reg():
     os.system('clear')
@@ -207,10 +207,10 @@ def log_menu_s():
 def log_fb():
     os.system('clear')
     print logo
-    print '\x1b[1;31;1mLogin with id/pass'
+    print '\033[1;96mLogin with id/pass'
     print 47 * '-'
-    lid = raw_input('\x1b[1;96m Id/mail/no: ')
-    pwds = raw_input(' \x1b[1;93mPassword: ')
+    lid = raw_input('\033[1;96m Id/mail/no: ')
+    pwds = raw_input(' \033[1;93mPassword: ')
     try:
         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pwd).text
         q = json.loads(data)
@@ -221,11 +221,11 @@ def log_fb():
             menu()
         elif 'www.facebook.com' in q['error']:
             print ' User must verify account before login'
-            raw_input('\x1b[1;92m Press enter to try again ')
+            raw_input('\033[1;93m Press enter to try again ')
             log_fb()
         else:
             print ' Id/Pass may be wrong'
-            raw_input(' \x1b[1;93mPress enter to try again ')
+            raw_input(' \033[1;93mPress enter to try again ')
             log_fb()
     except:
         print ''
@@ -236,9 +236,9 @@ def log_fb():
 def log_token():
     os.system('clear')
     print logo
-    print '\x1b[1;97mLogin with token\x1b[1;91m'
+    print '\033[1;96mLogin with token\033[1;93m'
     print 47 * '-'
-    tok = raw_input(' \x1b[1;96mPaste token here: \x1b[1;93m')
+    tok = raw_input(' \033[1;96mPaste token here: \033[1;93m')
     print 47 * '-'
     t_s = open('access_token.txt', 'w')
     t_s.write(tok)
@@ -250,7 +250,7 @@ def log_cookie():
     os.system('clear')
     print logo
     print ''
-    print '\x1b[1;31;1mLogin Cookies'
+    print '\033[1;96mLogin Cookies'
     print ''
     try:
         cookie = raw_input(' Paste cookies here: ')
@@ -273,21 +273,21 @@ def log_cookie():
         menu()
     except AttributeError:
         print ''
-        print '\tInvalid cookies'
+        print '\033[1;93mInvalid cookies'
         print ''
-        raw_input(' \x1b[1;92mPress enter to try again ')
+        raw_input(' \033[1;93mPress enter to try again ')
         log_menu()
     except UnboundLocalError:
         print ''
-        print '\tInvalid cookies'
+        print '\033[1;93mInvalid cookies'
         print ''
-        raw_input(' \x1b[1;92mPress enter to try again ')
+        raw_input(' \033[1;92mPress enter to try again ')
         log_menu()
     except requests.exceptions.SSLError:
         print ''
-        print '\tInvalid cookies'
+        print '\033[1;93mInvalid cookies'
         print ''
-        raw_input(' \x1b[1;92mPress enter to try again ')
+        raw_input(' \033[1;93mPress enter to try again ')
         log_menu()
 
 
@@ -298,7 +298,7 @@ def menu():
     except (KeyError, IOError):
         print ''
         print logo
-        print '\x1b[1;31;1mLogin FB id to continue'
+        print '\033[1;96mLogin FB id to continue'
         time.sleep(1)
         log_menu()
 
@@ -309,7 +309,7 @@ def menu():
     except (KeyError, IOError):
         print logo
         print ''
-        print '\t Account Cheekpoint\x1b[0;97m'
+        print '\033[1;93m Account Cheekpoint\033[0;97m'
         print ''
         os.system('rm -rf access_token.txt')
         time.sleep(1)
@@ -317,24 +317,24 @@ def menu():
     except requests.exceptions.ConnectionError:
         print logo
         print ''
-        print '\t Turn on mobile data/wifi\x1b[0;97m'
+        print '\033[1;92m Turn on mobile data/wifi\033[0;97m'
         print ''
-        raw_input(' \x1b[1;92mPress enter after turning on mobile data/wifi ')
+        raw_input(' \033[1;92mPress enter after turning on mobile data/wifi ')
         menu()
 
     os.system('clear')
     print logo
     tok = open('/sdcard/.hst.txt', 'r').read()
-    print '  \x1b[1;92mLogged in user: \x1b[1;91m' + z
+    print '  \033[1;97mLogged in user: \033[1;97m' + z
     print 47 * '-'
-    print ' \x1b[1;93m Active token: \x1b[1;91m' + tok
+    print ' \033[1;93m Active token: \033[1;93m' + tok
     print ' ------------------------------------------ '
-    print '\x1b[1;92m[1] Crack with Auto password 10'
-    print '\x1b[1;92m[2] Crack with Number password 6'
-    print '\x1b[1;92m[3] Crack with Name + Number password 8'
-    print '\x1b[1;92m[4] Extract File'
-    print '\x1b[1;92m[5] Logout'
-    print '\x1b[1;92m[6] Delete trash files'
+    print '\033[1;96m[1] Crack with Auto password'
+    print '\033[1;96m[2] Crack with Number password'
+    print '\033[1;96m[3] Crack with Name + Number password'
+    print '\033[1;96m[4] Extract File'
+    print '\033[1;96m[5] Logout'
+    print '\033[1;96m[6] Delete trash files'
     menu_s()
 
 
