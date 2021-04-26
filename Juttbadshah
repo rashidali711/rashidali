@@ -81,6 +81,9 @@ logo = """
 \033[1;96m
 \033[1;96m          Jutt Badshah Updated 0.3;)                   
 \033[1;91m     ❣️❣️---------------------------❣️❣️")
+\033[1;97m >Author : Jutt Badshah"
+\033[1;97m >Github : github.com/SHOOTER-UNITY"
+\033[1;97m > WP NO : +923007574310"
 """
 def tik():
 	titik = ['.   ','..  ','... ']
