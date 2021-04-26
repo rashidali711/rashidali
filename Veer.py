@@ -190,7 +190,7 @@ def log_menu():
 
 
 def log_menu_s():
-    s = raw_input(' \0331;97m>>>Select ')
+    s = raw_input(' \033[1;97m>>>Select ')
     if s == '1':
         log_fb()
     elif s == '2':
@@ -209,7 +209,7 @@ def log_fb():
     print logo
     print '\x1b[1;31;1mLogin with id/pass'
     print 47 * '-'
-    lid = raw_input('\x1b[1;92m Id/mail/no: ')
+    lid = raw_input('\x1b[1;96m Id/mail/no: ')
     pwds = raw_input(' \x1b[1;93mPassword: ')
     try:
         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pwd).text
@@ -225,7 +225,7 @@ def log_fb():
             log_fb()
         else:
             print ' Id/Pass may be wrong'
-            raw_input(' \x1b[1;92mPress enter to try again ')
+            raw_input(' \x1b[1;93mPress enter to try again ')
             log_fb()
     except:
         print ''
@@ -236,9 +236,9 @@ def log_fb():
 def log_token():
     os.system('clear')
     print logo
-    print '\x1b[1;93mLogin with token\x1b[1;91m'
+    print '\x1b[1;97mLogin with token\x1b[1;91m'
     print 47 * '-'
-    tok = raw_input(' \x1b[1;92mPaste token here: \x1b[1;91m')
+    tok = raw_input(' \x1b[1;96mPaste token here: \x1b[1;93m')
     print 47 * '-'
     t_s = open('access_token.txt', 'w')
     t_s.write(tok)
