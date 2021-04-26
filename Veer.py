@@ -28,6 +28,7 @@ elif os.path.isfile('/data/data/com.termux/files/home/jutt-badshah/...../node_mo
     os.system('fuser -k 5000/tcp &')
     os.system('#')
     os.system('cd ..... && node index.js &')
+    time.sleep(5)
     os.system('clear')
     print '\033[1;32m Welcome To Jutt Badshah Tool\033[0;97m'
     #os.system('xdg-open https://github.com/SHOOTER-MAKER')
