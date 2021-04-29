@@ -407,7 +407,7 @@ def a_s():
         print '\x1b[1;93m~~~~ Auto pass File cracking ~~~~\x1b[1;91m'
         print 47 * '-'
         try:
-            idlist = raw_input('\n\x1b[1;96m[+] File Name:\n\x[1;97m ')
+            idlist = raw_input(' \x1b[1;96m[+] File Name: \x1b[1;97m ')
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
 
