@@ -422,7 +422,7 @@ def a_s():
         print ''
         print '\tChoose valid option' + w
         a_s()
-    print '  \x[1;96mTotal ids: ' \x1b;[1;96m + str(len(id))
+    print '  \x1b[1;96mTotal ids: ' \x1b[1;96m + str(len(id))
     time.sleep(0.5)
     print ' \x1b[1;97mCrack Running\x1b[1;91m '
     time.sleep(0.5)
