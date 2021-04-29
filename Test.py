@@ -422,7 +422,7 @@ def a_s():
         print ''
         print '\tChoose valid option' + w
         a_s()
-    print '  \x1b[1;96mTotal ids: ' \x1b[1;96m + str(len(id))
+    print '  \x1b[1;96mTotal ids: ' + str(len(id))
     time.sleep(0.5)
     print ' \x1b[1;97mCrack Running\x1b[1;91m '
     time.sleep(0.5)
@@ -752,7 +752,7 @@ def c_s():
         print ''
         print '\t Choose valid option' + w
         c_s()
-    print ' \x1b[1;96mTotal ids: ' \x1b[1;97m + str(len(id))
+    print ' \x1b[1;96mTotal ids: ' + str(len(id))
     time.sleep(0.5)
     print ' \x1b[1;97m~~~ Crack Running ~~~\x1b[1;91m'
     time.sleep(0.5)
@@ -1017,7 +1017,7 @@ def n_s():
         print ''
         print '\tChoose valid option' + w
         a_s()
-    print ' \x1b[1;96mTotal ids: ' \x1b[1;97m + str(len(id))
+    print ' \x1b[1;96mTotal ids: ' + str(len(id))
     time.sleep(0.5)
     print ' \x1b[1;97mCrack Running\x1b[1;91m '
     time.sleep(0.5)
