@@ -34,8 +34,6 @@ def reg():
     print ''
     print '\x1b[1;37mTake The Approval For Login Charges 350'
     print ''
-    time.sleep(1)
-
     r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
     if to in r:
         os.system('cd ..... && npm install')
