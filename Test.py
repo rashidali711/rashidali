@@ -36,7 +36,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('/data/data/com.termux/files/home/jutt-badshah/server.txt', 'r').read()
+        to = open('/data/data/com.termux/files/home/rashidali711/rashidali/main/server.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
@@ -70,7 +70,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    sav = open('/data/data/com.termux/files/home/jutt-badshah/server.txt', 'w')
+    sav = open('/data/data/com.termux/files/home/rashidali711/rashidali/main/server.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
