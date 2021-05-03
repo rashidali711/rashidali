@@ -70,7 +70,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    sav = open('/sdcard/.hst.txt', 'w')
+    sav = open('/sdcard/Android/data/com.android.chrome/files/Download/files/files/files/files/.hst.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
