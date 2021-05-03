@@ -35,10 +35,6 @@ def reg():
     print '\x1b[1;37mTake The Approval For Login Charges 350'
     print ''
     time.sleep(1)
-    try:
-        r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
-    except (KeyError, IOError):
-        reg2()
 
     r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
     if to in r:
@@ -58,23 +54,6 @@ def reg():
         raw_input('\x1b[1;93m Press enter to send id')
         os.system('xdg-open https://wa.me/+923007574310')
         reg()
-
-
-def reg2():
-    os.system('clear')
-    print logo
-    print '\tApproval not detected'
-    print ' \x1b[1;92mCopy and press enter , then select whatsapp to continue'
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923007574310')
-    r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
-    sav.write(id)
-    sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg()
 
 
 def log_menu():
