@@ -73,7 +73,7 @@ def reg2():
     try:
         to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').read()
     except (KeyError, IOError):
-    reg()
+        reg()
 
 
 def log_menu():
