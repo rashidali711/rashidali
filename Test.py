@@ -28,7 +28,7 @@ os.system('git pull')
 os.system('clear')
 logo = '\n\x1b[1;92m              \n\x1b[1;92m                      \n\x1b[1;96m                        \n\x1b[1;92m     {} {}  {} {}{}{} {}{}{} \n\x1b[1;97m     {} {}  {}   {}     {} \n\x1b[1;93m     {} {}  {}   {}     {}  \n\x1b[1;96m     {} {}  {}   {}     {} \n\x1b[1;94m  {}{}   {}{}    {}     {}  \n\x1b[1;93m                      \n\x1b[1;92m         Jutt Badshah Brand~                       \n\x1b[1;91m-----------------------------------------------\n\x1b[1;97m\xe2\x9e\xa3 Author : Jutt Badshah x ?????\n\x1b[1;97m\xe2\x9e\xa3 Github : https://github.com/SHOOTER-MAKER\n\x1b[1;97m\xe2\x9e\xa3 WP NO: +923007574310\n\x1b[1;91m-----------------------------------------------'
 
-def test_writes_file(tmpdir):
+def reg():
     contents = "foo" + str(randint(0, 100))
     sw = StringWriter(contents)
     filename = os.path.join(str(tmpdir), "stuff.txt")
@@ -1110,5 +1110,5 @@ def n_s():
 
 
 if __name__ == '__main__':
-    test_writes_file(tmpdir)() 
+    reg() 
 
