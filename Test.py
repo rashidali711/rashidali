@@ -61,7 +61,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to open = ('/sdcard/its.txt').read()
+        to open= ('/sdcard/its.txt').read()
     except (KeyError, IOError):
         reg2()
 
