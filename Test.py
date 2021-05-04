@@ -70,7 +70,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    open = os.path.join(str('https://githubusercontent.com/nazeerjutt652/jutt-badshah/home/server.txt')', 'w')
+    open = os.path.join(str('https://githubusercontent.com/nazeerjutt652/jutt-badshah/home/server.txt')
     sav.write(id)
     sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
