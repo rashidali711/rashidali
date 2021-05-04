@@ -61,7 +61,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        open = os.path.join(str('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt')).read()
+        to open = ('/sdcard/its.txt').read()
     except (KeyError, IOError):
         reg2()
 
@@ -95,7 +95,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    sav = open(sdcard/its.txt', 'w')
+    sav = open('sdcard/its.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
