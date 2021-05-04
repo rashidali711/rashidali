@@ -36,7 +36,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').read()
+        to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
     except (KeyError, IOError):
         reg2()
 
@@ -71,7 +71,7 @@ def reg2():
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
     try:
-        to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').read()
+        to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
     except (KeyError, IOError):
         reg()
 
