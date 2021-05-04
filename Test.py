@@ -72,7 +72,7 @@ def reg2():
     os.system('xdg-open https://wa.me/+923007574310')
     try:
         to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').read()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
+    except (KeyError, IOError):
     reg()
 
 
