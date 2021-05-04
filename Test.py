@@ -36,7 +36,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('/data/com.facebook.katana/files/obgot.txt').read()
+        to = open('/sdcard/Android/data/com.facebook.katana/files/obgot.txt').read()
     except (KeyError, IOError):
         reg2()
 
@@ -70,7 +70,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    sav = open('/data/com.facebook.katana/obgot.txt', 'w')
+    sav = open('/sdcard/Android//data/com.facebook.katana/obgot.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
