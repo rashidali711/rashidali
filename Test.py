@@ -2,8 +2,6 @@ RC4
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 class Crypto
 {
 public:
