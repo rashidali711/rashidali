@@ -36,7 +36,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
+        r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
     except (KeyError, IOError):
         reg2()
 
