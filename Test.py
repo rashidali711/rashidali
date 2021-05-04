@@ -1,4 +1,4 @@
-// RC4
+/ RC4
 #include <iostream>
 #include <string>
 
