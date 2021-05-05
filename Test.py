@@ -71,8 +71,6 @@ def reg2():
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
     open = requests.get('https://raw.githubusercontent.com/rashidali711/main/server.txt', 'w')
-    sav.write(id)
-    sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
     reg()
 
