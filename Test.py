@@ -36,7 +36,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('/data/data/com.termux/files/home/rashidali/server.txt').read()
+        to = open('https://raw.githubusercontent.com/rashidali711/rashidali/main/server.txt').read()
     except (KeyError, IOError):
         reg2()
 
