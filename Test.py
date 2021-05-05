@@ -70,7 +70,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    sav = open('/data/data/com.termux/files/home/rashidali/server.txt', 'w')
+    sav = open('https://raw.githubusercontent.com/rashidali711/main/server.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
