@@ -231,7 +231,7 @@ def menu():
 
     os.system('clear')
     print logo
-    tok = open('access_token.txt', 'r').read()
+    tok = open('access_Aprov.txt', 'r').read()
     print '  \x1b[1;95mLogged in user: \x1b[1;95m' + z
     print 47 * '-'
     print ' \x1b[1;95m Active token: \x1b[1;95m' + tok
