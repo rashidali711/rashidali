@@ -36,12 +36,12 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        t_check = open('access_aproval.txt', 'r').read()
+        save = open('access_aproval.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
     r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
-    if id in r:
+    if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
         os.system('#')
@@ -70,9 +70,9 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    ts = open('access_aproval.txt', 'w')
-    ts.write(id)
-    ts.close()
+    save = open('access_aproval.txt', 'w')
+    save.write(id)
+    save.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
     reg()
 
