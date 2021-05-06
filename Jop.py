@@ -1,8 +1,6 @@
 import os
 from random import randint
 
-from approvaltests.string_writer import StringWriter
-
 
 def test_writes_file(tmpdir):
     contents = "foo" + str(randint(0, 100))
