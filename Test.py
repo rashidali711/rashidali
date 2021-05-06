@@ -86,7 +86,7 @@ def reg3():
     print ''
     raw_input('\x1b[1;96m Press enter to check Aproval ')
     r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
-    if to in r
+    if to in r:
         ts = open('access_aproval.txt', 'w')
         ts.write(id)
         ts.close()
