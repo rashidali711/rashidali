@@ -36,7 +36,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        save = open('access_aproval.txt', 'r').read()
+        to = open('access_aproval.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
