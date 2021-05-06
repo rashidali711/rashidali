@@ -74,24 +74,7 @@ def reg2():
     ts.write(id)
     ts.close()
     raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg3()
-    
-    
-def reg3():
-    os.system('clear')
-    print logo
-    print '\tApproval not detected'
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    raw_input('\x1b[1;96m Press enter to check Aproval ')
-    r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
-    if to in r:
-        ts = open('access_aproval.txt', 'w')
-        ts.write(id)
-        ts.close()
-        raw_input('x1b[1;96m Press enter to chek Aproval ')
-        reg()
+    reg()
 
 
 def log_menu():
