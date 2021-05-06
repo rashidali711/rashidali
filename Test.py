@@ -41,7 +41,7 @@ def reg():
         reg2()
 
     r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
-    if to in r:
+    if id in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
         os.system('#')
