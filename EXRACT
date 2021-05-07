@@ -318,7 +318,7 @@ def extract_ids():
     os.system('rm -rf ids_friends.txt')
     print(' File downloaded successfully')
     time.sleep(1)
-    menu()
+    extract_ids()
 
 
 def crack():
