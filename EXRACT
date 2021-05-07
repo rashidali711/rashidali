@@ -271,14 +271,14 @@ def menu_s():
         
 def extract_ids():
     idg=[]
-    global toket
+    global token
     try:
-    	toket = open('login.txt', 'r').read()
+    	token = open('access_token.txt', 'r').read()
     except IOError:
     	print('\t    \x1b[1;31mToken not found\x1b[0;97m')
     	print('')
     	time.sleep(1)
-    	login_choice()
+    	log_menu()
     os.system('clear')
     print(logo)
     print('')
