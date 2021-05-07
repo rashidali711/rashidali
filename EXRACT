@@ -317,7 +317,7 @@ def extract_id():
     os.system('cp ids_friends.txt /sdcard')
     print(' File downloaded successfully')
     time.sleep(1)
-    extract_ids()
+    extract_id()
 
 
 def crack():
