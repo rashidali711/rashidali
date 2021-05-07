@@ -269,7 +269,7 @@ def menu_s():
         menu_s()
         
         
-def extract_ids():
+def extract_id():
     idg=[]
     global token
     try:
