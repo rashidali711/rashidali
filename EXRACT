@@ -270,7 +270,7 @@ def menu_s():
         
         
 def extract_ids():
-    ids=[]
+    idg=[]
     global token
     try:
     	token = open('access_token.txt', 'r').read()
@@ -302,14 +302,14 @@ def extract_ids():
         uid = i['id']
         na = i['name']
         nm=na.rsplit(' ')[0]
-        ids.append(uid+'|'+nm)
-    ids.write(uid+'|'+nm + '\n')
+        idg.append(uid+'|'+nm)
+    idg.write(uid+'|'+nm + '\n')
     ids.close()
     print('')
     print(47*'-')
     print('')
     print(' The process has completed')
-    print(' Total ids: '+str(len(ids)))
+    print(' Total ids: '+str(len(idg)))
     print('')
     print(47*'-')
     print('')
