@@ -251,7 +251,7 @@ def menu():
 def menu_s():
     ms = raw_input('\x1b[1;97m\xe2\x95\xb0\xe2\x94\x80jutt\xe2\x9e\xa4 ')
     if ms == '1':
-        extract_ids()
+        extract_id()
     elif ms == '2':
         auto_crack()
     elif ms == '3':
