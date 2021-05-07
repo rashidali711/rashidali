@@ -1148,7 +1148,7 @@ def ex_id():
     idg=[]
     global token
     try:
-    	t_check = open('access_token.txt','r').read()
+    	token = open('access_token.txt','r').read()
     except IOError:
     	print('\t    \033[1;31mToken not found\033[0;97m')
     	print('')
