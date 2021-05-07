@@ -1159,7 +1159,7 @@ def ex_id():
     print("")
     idh = raw_input(' Input Id: ')
     try:
-        r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
+        r = requests.get('https://graph.facebook.com/' + idh + '?access_token=' + token)
         q = json.loads(r.text)
         print(' Collecting from: '+q['name'])
     except KeyError:
@@ -1168,7 +1168,7 @@ def ex_id():
         print('')
         raw_input(' Press enter to back')
         log_menu()
-    r = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + token)
+    r = requests.get('https://graph.facebook.com/' + idh + '/friends?access_token=' + token)
     q = json.loads(r.text)
     ids = open('ids_friends.txt','w')
     for i in q['data']:
