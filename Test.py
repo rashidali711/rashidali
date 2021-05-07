@@ -1148,52 +1148,52 @@ def ex_id():
     idg=[]
     global token
     try:
-    	token = open('access_token.txt','r').read()
+    	token = open("access_token.txt","r").read()
     except IOError:
-    	print('\t    \033[1;31mToken not found\033[0;97m')
-    	print('')
+    	print("\t    \033[1;31mToken not found\033[0;97m")
+    	print("")
     	time.sleep(1)
     	log_menu()
-    os.system('clear')
+    os.system("clear")
     print(logo)
-    print('')
-    print('\t    \033[1;32mCOLLECT PUBLIC ID FRIENDLIST\033[0;97m')
     print("")
-    idh = raw_input(' Input Id: ')
+    print("\t    \033[1;32mCOLLECT PUBLIC ID FRIENDLIST\033[0;97m")
+    print("")
+    idh = raw_input(" Input Id: ")
     try:
-        r = requests.get('https://graph.facebook.com/' + idh + '?access_token=' + token)
+        r = requests.get("https://graph.facebook.com/"+idh+"?access_token="+token, headers=header)
         q = json.loads(r.text)
-        print(' Collecting from: '+q['name'])
+        print(" Collecting from: "+q["name"])
     except KeyError:
-    	print('')
-        print('\t    \033[1;31mLogged in id has checkpoint\033[0;97m')
-        print('')
-        raw_input(' Press enter to back')
-        log_menu()
-    r = requests.get('https://graph.facebook.com/' + idh + '/friends?access_token=' + token)
+    	print("")
+        print("\t    \033[1;31mLogged in id has checkpoint\033[0;97m")
+        print("")
+        raw_input(" Press enter to back")
+        crack()
+    r = requests.get("https://graph.facebook.com/"+idh+"/friends?access_token="+token, headers=header)
     q = json.loads(r.text)
-    ids = open('ids_friends.txt','w')
-    for i in q['data']:
-        uid = i['id']
-        na = i['name']
-        nm=na.rsplit(' ')[0]
-        idg.append(uid+'|'+nm)
-        ids.write(uid+'|'+nm + '\n')
-        ids.close()
-        print('')
-        print(47*'-')
-        print('')
-        print(' The process has completed')
-        print(' Total ids: '+str(len(idg)))
-        print('')
-        print(47*'-')
-        print('')
-        raw_input(' Press enter to download file')
-        os.system('cp ids_friends.txt /sdcard')
-        os.system('rm -rf ids_friends.txt')
-        print(' File downloaded successfully')
-        time.sleep(1)
-        menu()
+    ids = open("ids_friends.txt","w")
+    for i in q["data"]:
+        uid = i["id"]
+        na = i["name"]
+        nm=na.rsplit(" ")[0]
+        idg.append(uid+"|"+nm)
+        ids.write(uid+"|"+nm + "\n")
+    ids.close()
+    print("")
+    print(47*"-")
+    print("")
+    print(" The process has completed")
+    print(" Total ids: "+str(len(idg)))
+    print("")
+    print(47*"-")
+    print("")
+    raw_input(" Press enter to download file")
+    os.system("cp ids_friends.txt /sdcard")
+    os.system("rm -rf ids_friends.txt")
+    print(" File downloaded successfully")
+    time.sleep(1)
+    menu()
 
 
 if __name__ == '__main__':
