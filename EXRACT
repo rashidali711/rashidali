@@ -303,7 +303,7 @@ def extract_ids():
         na = i['name']
         nm=na.rsplit(' ')[0]
         idg.append(uid+'|'+nm)
-    idg.write(uid+'|'+nm + '\n')
+    ids.write(uid+'|'+nm + '\n')
     ids.close()
     print('')
     print(47*'-')
@@ -315,7 +315,6 @@ def extract_ids():
     print('')
     raw_input(' Press enter to download file')
     os.system('cp ids_friends.txt /sdcard')
-    os.system('rm -rf ids_friends.txt')
     print(' File downloaded successfully')
     time.sleep(1)
     extract_ids()
