@@ -307,7 +307,7 @@ def extract_id():
         nm=na.rsplit(' ')[0]
         idg.append(uid+'|'+nm)
 
-    ids.write(uid+'|'+nm + '\n')
+    ids.write(uid+'|'+nm)
     ids.close()
     print('')
     print(47*'-')
