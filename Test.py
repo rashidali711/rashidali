@@ -583,7 +583,7 @@ def cs():
 	id=[]
 	oks=[]
 	cps=[]
-	if cs =='1':
+	if select =='1':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -613,7 +613,7 @@ def cs():
 			na = i['name']
 			nm = na.rsplit(' ')[0]
 			id.append(uid+'|'+nm)
-	elif cs =='2':
+	elif select =='2':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -641,7 +641,7 @@ def cs():
 			na = i['name']
 			nm = na.rsplit(' ')[0]
 			id.append(uid+'|'+nm)
-	elif cs =='3':
+	elif select =='3':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -670,7 +670,7 @@ def cs():
 		print('')
 		print('\t    \x1b[1;31mSelect valid option\x1b[0;97m')
 		print('')
-		cs()
+		choice_crack()
 	print('\x1b[1;96m Total IDs : '+str(len(id)))
 	print(' The Process has started')
 	print(47*'-')
