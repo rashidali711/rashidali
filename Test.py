@@ -813,7 +813,7 @@ def ns():
 	id=[]
 	oks=[]
 	cps=[]
-	if ns =='1':
+	if select =='1':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -845,7 +845,7 @@ def ns():
 			na = i['name']
 			nm = na.rsplit(' ')[0]
 			id.append(uid+'|'+nm)
-	elif ns =='2':
+	elif select =='2':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -877,7 +877,7 @@ def ns():
 			na = i['name']
 			nm = na.rsplit(' ')[0]
 			id.append(uid+'|'+nm)
-	elif ns =='3':
+	elif select =='3':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -908,7 +908,7 @@ def ns():
 		print('')
 		print('\t    \x1b[1;31mSelect valid option\x1b[0;97m')
 		print('')
-		choice_select()
+		ns()
 	print('\x1b[1;96m Total IDs : '+str(len(id)))
 	print(' The Process has started')
 	print(47*'-')
