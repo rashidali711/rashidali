@@ -577,8 +577,8 @@ def choice_crack():
 	print '\x1b[1;92m[3] Crack file'
 	print '\x1b[1;92m[0] Back'
 	print('')
-	choice_select()
-def choice_select():
+	cs()
+def cs():
 	select = raw_input('\x1b[1;36mSelect option: \x1b[0;97m')
 	id=[]
 	oks=[]
@@ -807,13 +807,13 @@ def name_crack():
 	print '\x1b[1;92m[3] Crack file'
 	print '\x1b[1;92m[0] Back'
 	print('')
-	choice_select()
-def choice_select():
+	ns()
+def ns():
 	select = raw_input('\x1b[1;36mSelect option: \x1b[0;97m')
 	id=[]
 	oks=[]
 	cps=[]
-	if select =='1':
+	if ns =='1':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -845,7 +845,7 @@ def choice_select():
 			na = i['name']
 			nm = na.rsplit(' ')[0]
 			id.append(uid+'|'+nm)
-	elif select =='2':
+	elif ns =='2':
 		os.system('clear')
 		print(logo)
 		print('')
@@ -877,7 +877,7 @@ def choice_select():
 			na = i['name']
 			nm = na.rsplit(' ')[0]
 			id.append(uid+'|'+nm)
-	elif select =='3':
+	elif ns =='3':
 		os.system('clear')
 		print(logo)
 		print('')
