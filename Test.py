@@ -807,8 +807,8 @@ def name_crack():
 	print '\x1b[1;92m[3] Crack file'
 	print '\x1b[1;92m[0] Back'
 	print('')
-	ns()
-def ns():
+	n_s()
+def n_s():
 	select = raw_input('\x1b[1;36mSelect option: \x1b[0;97m')
 	id=[]
 	oks=[]
@@ -908,7 +908,7 @@ def ns():
 		print('')
 		print('\t    \x1b[1;31mSelect valid option\x1b[0;97m')
 		print('')
-		ns()
+		n_s()
 	print('\x1b[1;96m Total IDs : '+str(len(id)))
 	print(' The Process has started')
 	print(47*'-')
