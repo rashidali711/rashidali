@@ -908,7 +908,7 @@ def name_select():
 		print('')
 		print('\t    \x1b[1;31mSelect valid option\x1b[0;97m')
 		print('')
-		n_s()
+		name_select()
 	print('\x1b[1;96m Total IDs : '+str(len(id)))
 	print(' The Process has started')
 	print(47*'-')
@@ -1058,6 +1058,8 @@ def name_select():
 	print('')
 	raw_input('\x1b[1;92m Press enter to back')
 	menu()
+
+
 if __name__ == '__main__':
 	reg()
 
