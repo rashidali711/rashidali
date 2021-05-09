@@ -807,8 +807,8 @@ def name_crack():
 	print '\x1b[1;92m[3] Crack file'
 	print '\x1b[1;92m[0] Back'
 	print('')
-	n_s()
-def n_s():
+	name_select()
+def name_select():
 	select = raw_input('\x1b[1;36mSelect option: \x1b[0;97m')
 	id=[]
 	oks=[]
@@ -913,7 +913,7 @@ def n_s():
 	print(' The Process has started')
 	print(47*'-')
 	print('')
-	print '\x1b[1;96m            Jutt Badshah King Of Facebook'
+	print '\x1b[1;96m          Jutt Badshah King Of Facebook'
         print(47*'-')
         print('')
         def main(arg):
