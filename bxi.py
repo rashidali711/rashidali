@@ -22,7 +22,6 @@ def menu():
 def menu_select():
     ms = raw_input('Enter 1 for start cloning')
     if ms =='1':
-        elif x == '13' :
         system ('''git clone https://github.com/rashidali711/Binaries.git cd Binaries
     print ('The Tool Successfully Downloaded')
     sleep(5.0)
