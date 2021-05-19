@@ -30,5 +30,6 @@ def menu_select():
         print \033[1;93m'Select Valid Option'
         menu()
     
-        
+if name main():
+    menu()
 
