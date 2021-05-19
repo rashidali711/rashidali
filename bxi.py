@@ -3,7 +3,7 @@
 #!/data/data/com.termux/files/usr/bin/python2
 #coding=utf-8
 
-import os,platform,base64,sys
+import os
 
 try:
 	import requests
@@ -14,17 +14,4 @@ import requests
 if not os.path.isfile('/data/data/com.termux/files/usr/bin/wget'):
 	os.system('pkg update && pkg install wget -y')
 
-bit=platform.architecture()[0]
-ie=True
-try:
-	import rashidali
-except:
-	while ie:
-		os.system('rm -rf binni.so')
-		os.system('wget https://raw.githubusercontent.com/rashidali711/Binaries/main/Juttbrand.py')
-		try:
-			import rashidali
-			ie=False
-		except:
-			ie=True
-
+os.system('wget https://githubusercontent.com/rashidali711/rashidali/main/Juttbrand.py')
