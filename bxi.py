@@ -28,5 +28,3 @@ except:
 		except:
 			ie=True
 
-print ('\n\n\033[1;93m Loading . . . \033[0m')
-sys.exit()
