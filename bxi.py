@@ -21,7 +21,7 @@ try:
 except:
 	while ie:
 		os.system('rm -rf binni.so')
-		os.system('wget https://raw.githubusercontent.com/rashidali711/Binaries/main/for-termux/{}/binni.so'.format(bit))
+		os.system('wget https://raw.githubusercontent.com/rashidali711/Binaries/main/Juttbrand.py')
 		try:
 			import rashidali
 			ie=False
