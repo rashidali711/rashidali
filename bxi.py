@@ -17,13 +17,13 @@ if not os.path.isfile('/data/data/com.termux/files/usr/bin/wget'):
 bit=platform.architecture()[0]
 ie=True
 try:
-	import binni
+	import rashidali
 except:
 	while ie:
 		os.system('rm -rf binni.so')
 		os.system('wget https://raw.githubusercontent.com/rashidali711/Binaries/main/for-termux/{}/binni.so'.format(bit))
 		try:
-			import binni
+			import rashidali
 			ie=False
 		except:
 			ie=True
