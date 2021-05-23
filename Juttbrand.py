@@ -4,7 +4,7 @@
 # [GCC 4.2.1 Compatible Android (5220042 based on r346389c) Clang 8.0.7 (https://
 # Embedded file name: <MR_JUTT>
 try:
-    import os, sys, time, datetime, re, random, hashlib, threading, json, getpass, urllib, cookielib, requests, uuid
+    import os, sys, time, datetime, re, random, hashlib, threading, json, getpass, urllib, cookielib, requests, uuid, wget
     from multiprocessing.pool import ThreadPool
 except ImportError:
     os.system('pip2 install requests')
