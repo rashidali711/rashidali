@@ -20,13 +20,6 @@ from requests.exceptions import ConnectionError
 __author__ = 'Mr.Jutt'
 __copyright = 'All rights reserved . Copyright  Mr.Jutt'
 os.system('clear')
-os.system('termux-setup-storage')
-    time.sleep(1)
-    print('\t\033[1;92mPress y To program Run')
-try:
-    os.mkdir('/sdcard/ids')
-except OSError:
-    pass
 
 bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
