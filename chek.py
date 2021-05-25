@@ -19,7 +19,7 @@ if not os.path.isfile('/data/data/com.termux/files/usr/bin/ruby'):
 from requests.exceptions import ConnectionError
 __author__ = 'Mr.Jutt'
 __copyright = 'All rights reserved . Copyright  Mr.Jutt'
-os.system('clear')
+print('\t\x1b[1;97m')
 os.system('termux-setup-storage')
 try:
     os.mkdir('/sdcard/ids')
