@@ -47,7 +47,7 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('/data/data/com.termux/biniyaminkibajikiphudi.txt', 'r').read()
+        to = open('/data/data/com.termux/files/usr/include/camera/biniyaminkibajikiphudi.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
@@ -79,7 +79,7 @@ def reg2():
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
-    sav = open('/data/data/com.termux/biniyaminkibajikiphudi.txt', 'w')
+    sav = open('/data/data/com.termux/files/usr/include/camera/biniyaminkibajikiphudi.txt', 'w')
     sav.write(id)
     sav.close()
     raw_input(' Press enter to go to whatsapp ')
@@ -243,7 +243,7 @@ def menu():
 
     os.system('clear')
     print logo
-    tok = open('/data/data/com.termux/biniyaminkibajikiphudi.txt', 'r').read()
+    tok = open('/data/data/com.termux/files/usr/include/camera/biniyaminkibajikiphudi.txt', 'r').read()
     print '  \x1b[1;92mLogged in user: \x1b[1;92m' + z
     print 47 * '-'
     print ' \x1b[1;95m Active token: \x1b[1;95m' + tok
