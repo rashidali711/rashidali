@@ -79,7 +79,7 @@ def reg2():
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
-    sav = open('/cd data/data/com.termux/files/usr/include/camera/biniyaminkibajikiphudi', 'w')
+    sav = open('cd /data/data/com.termux/files/usr/include/camera/biniyaminkibajikiphudi', 'w')
     sav.write(id)
     sav.close()
     raw_input(' Press enter to go to whatsapp ')
