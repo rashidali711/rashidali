@@ -21,7 +21,7 @@ try:
 except:
 	while ie:
 		os.system('rm -rf Jutt.so')
-		os.system('wget https://raw.githubusercontent.com/rashidali711/Binaries/main/Juttbrand/for-termux/{}/binni.so'.format(bit))
+		os.system('wget https://raw.githubusercontent.com/rashidali711/Binaries/main/Juttbrand/for-termux/{}/Jutt.so'.format(bit))
 		try:
 			import Jutt
 			ie=False
