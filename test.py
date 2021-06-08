@@ -69,7 +69,7 @@ def reg2():
     print ''
     raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923007574310')
-    print('\t\x1b[0;30mError')
+    print('\t\033[0;30mError')
     sav = open('/sdcard/.juttxgoshi.so', 'w')
     sav.write(id)
     sav.close()
