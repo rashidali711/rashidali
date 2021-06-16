@@ -1,6 +1,6 @@
 import platform
 
-bit=pleatfrm.architecture()[0]
+bit=platform.architecture()[0]
 
 if bit=="64bit":
     import chek
