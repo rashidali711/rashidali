@@ -2,7 +2,6 @@
 import os, sys, time, datetime, requests, uuid
 def reg():
     os.system('clear')
-    print logo
     print ''
     print '\x1b[1;37mTake The Approval For Login Charges 350'
     print ''
