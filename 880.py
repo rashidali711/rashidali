@@ -42,7 +42,7 @@ def reg():
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/nazeerjutt652/jutt-badshah/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/rashidali711/rashidali/main/server.txt').text
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
@@ -751,5 +751,5 @@ def c_s():
 
 
 if __name__ == '__main__':
-    log_menu()
+    reg()
 
