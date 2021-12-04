@@ -6,6 +6,7 @@
 b10c8c6553094e13bdacab9e7e7f4d98 ahad malik
 d7a1389fab5541829e54cc0629ff0777 ahad malik2
 855dc57509d049b0b1c5e77035858dde arbaz malik
+f61ce4f4a6a14e2dbed38384ab87a7f0 abdul qadir
 b35664a4f3814e8ca9fef3af74d201dc azad khan
 0dd448be2b32402c80afa8c9fd55b3fd rosh
 f43cda9676964d40acf2f321f661e9ad 10 nov
